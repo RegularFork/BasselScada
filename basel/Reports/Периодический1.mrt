@@ -22,8 +22,8 @@
     <Report isRef="0" />
     <Resources isList="true" count="0" />
     <Variables isList="true" count="4">
-      <value>,Данные_Начало,Данные_Начало,,System.DateTime,_x0035__x002F_16_x002F_2023_x0020_9:00:00_x0020_AM,False,False,False,False,,,True</value>
-      <value>,Данные_Конец,Данные_Конец,,System.DateTime,_x0035__x002F_16_x002F_2023_x0020_1:00:00_x0020_PM,False,False,False,False,,,True</value>
+      <value>,Данные_Начало,Данные_Начало,,System.Nullable`1[System.DateTime],,False,False,False,False,,,True</value>
+      <value>,Данные_Конец,Данные_Конец,,System.Nullable`1[System.DateTime],,False,False,False,False,,,True</value>
       <value>,Данные_Интервал,Данные_Интервал,,System.Int64,_x0033_600,False,False,False,False</value>
       <value>,vrDynamic_name,vrDynamic_name,Номер_x0020_потребителя,System.String,,False,False,False,False,,,True</value>
     </Variables>
@@ -136,7 +136,7 @@
               <Name>HeaderДанные_vrDynamic_A_Begin</Name>
               <Page isRef="3" />
               <Parent isRef="8" />
-              <Text>А+ кВт.ч От</Text>
+              <Text>А+ кВт*ч От</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
@@ -154,7 +154,7 @@
               <Name>HeaderДанные_vrDynamic_A_End</Name>
               <Page isRef="3" />
               <Parent isRef="8" />
-              <Text>А+ кВт.ч До</Text>
+              <Text>А+ кВт*ч До</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
@@ -172,7 +172,7 @@
               <Name>HeaderДанные_vrDynamic_A_Raznica</Name>
               <Page isRef="3" />
               <Parent isRef="8" />
-              <Text>А+ кВт.ч Разница</Text>
+              <Text>А+ кВт*ч Разница</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <Type>Expression</Type>
@@ -225,10 +225,17 @@
               <Parent isRef="13" />
               <Text>{Данные.vrDynamic_A_Begin}</Text>
               <TextBrush>Black</TextBrush>
+              <TextFormat Ref="16" type="NumberFormat" isKey="true">
+                <DecimalDigits>1</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <VertAlignment>Center</VertAlignment>
             </DataДанные_vrDynamic_A_Begin>
-            <DataДанные_vrDynamic_A_End Ref="16" type="Text" isKey="true">
+            <DataДанные_vrDynamic_A_End Ref="17" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
@@ -243,8 +250,8 @@
               <Parent isRef="13" />
               <Text>{Данные.vrDynamic_A_End}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="17" type="NumberFormat" isKey="true">
-                <DecimalDigits>3</DecimalDigits>
+              <TextFormat Ref="18" type="NumberFormat" isKey="true">
+                <DecimalDigits>1</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator> </GroupSeparator>
                 <NegativePattern>1</NegativePattern>
@@ -253,7 +260,7 @@
               <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
               <VertAlignment>Center</VertAlignment>
             </DataДанные_vrDynamic_A_End>
-            <DataДанные_vrDynamic_A_Raznica Ref="18" type="Text" isKey="true">
+            <DataДанные_vrDynamic_A_Raznica Ref="19" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <CanGrow>True</CanGrow>
@@ -268,7 +275,7 @@
               <Parent isRef="13" />
               <Text>{Данные.vrDynamic_A_Raznica}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="19" type="NumberFormat" isKey="true">
+              <TextFormat Ref="20" type="NumberFormat" isKey="true">
                 <DecimalDigits>3</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator> </GroupSeparator>
@@ -288,12 +295,12 @@
           <Parent isRef="3" />
           <Sort isList="true" count="0" />
         </DataДанные>
-        <FooterBand1 Ref="20" type="FooterBand" isKey="true">
+        <FooterBand1 Ref="21" type="FooterBand" isKey="true">
           <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
           <Brush>[0:255:255:255]</Brush>
           <ClientRectangle>0,6.6,19,0.8</ClientRectangle>
           <Components isList="true" count="1">
-            <Text1 Ref="21" type="Text" isKey="true">
+            <Text1 Ref="22" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
               <ClientRectangle>14.4,0,4.6,0.8</ClientRectangle>
@@ -304,10 +311,10 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text1</Name>
               <Page isRef="3" />
-              <Parent isRef="20" />
+              <Parent isRef="21" />
               <Text>{SumD(Данные.vrDynamic_A_Raznica)}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="22" type="NumberFormat" isKey="true">
+              <TextFormat Ref="23" type="NumberFormat" isKey="true">
                 <DecimalDigits>3</DecimalDigits>
                 <DecimalSeparator>,</DecimalSeparator>
                 <GroupSeparator> </GroupSeparator>
@@ -324,40 +331,40 @@
           <Page isRef="3" />
           <Parent isRef="3" />
         </FooterBand1>
-        <ReportSummaryBand1 Ref="23" type="ReportSummaryBand" isKey="true">
+        <ReportSummaryBand1 Ref="24" type="ReportSummaryBand" isKey="true">
           <Brush>Transparent</Brush>
           <ClientRectangle>0,8.2,19,6</ClientRectangle>
           <Components isList="true" count="1">
-            <Chart1 Ref="24" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
-              <Area Ref="25" type="Stimulsoft.Report.Chart.StiClusteredColumnArea" isKey="true">
+            <Chart1 Ref="25" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
+              <Area Ref="26" type="Stimulsoft.Report.Chart.StiClusteredColumnArea" isKey="true">
                 <BorderColor>Transparent</BorderColor>
                 <BorderThickness>1</BorderThickness>
                 <Brush>[255:255:255]</Brush>
-                <Chart isRef="24" />
-                <GridLinesHorRight Ref="26" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
-                  <Area isRef="25" />
+                <Chart isRef="25" />
+                <GridLinesHorRight Ref="27" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+                  <Area isRef="26" />
                   <Color>Silver</Color>
                   <MinorColor>Gainsboro</MinorColor>
                   <Visible>False</Visible>
                 </GridLinesHorRight>
-                <YAxis Ref="27" type="Stimulsoft.Report.Chart.StiYLeftAxis" isKey="true">
-                  <Area isRef="25" />
+                <YAxis Ref="28" type="Stimulsoft.Report.Chart.StiYLeftAxis" isKey="true">
+                  <Area isRef="26" />
                   <LineColor>140, 140, 140</LineColor>
-                  <Title Ref="28" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                  <Title Ref="29" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
                     <Color>140, 140, 140</Color>
                     <Direction>BottomToTop</Direction>
                     <Font>Tahoma,12,Bold</Font>
                   </Title>
                 </YAxis>
-                <YRightAxis Ref="29" type="Stimulsoft.Report.Chart.StiYRightAxis" isKey="true">
-                  <Area isRef="25" />
-                  <Labels Ref="30" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                <YRightAxis Ref="30" type="Stimulsoft.Report.Chart.StiYRightAxis" isKey="true">
+                  <Area isRef="26" />
+                  <Labels Ref="31" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
                     <Color>140, 140, 140</Color>
                     <Font>Tahoma,8</Font>
                     <TextAlignment>Left</TextAlignment>
                   </Labels>
                   <LineColor>140, 140, 140</LineColor>
-                  <Title Ref="31" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                  <Title Ref="32" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
                     <Color>140, 140, 140</Color>
                     <Direction>TopToBottom</Direction>
                     <Font>Tahoma,12,Bold</Font>
@@ -371,10 +378,10 @@
               <CustomStyleName />
               <Expressions isList="true" count="0" />
               <Filters isList="true" count="0" />
-              <Legend Ref="32" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+              <Legend Ref="33" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
                 <BorderColor>Transparent</BorderColor>
                 <Brush>[255:255:255]</Brush>
-                <Chart isRef="24" />
+                <Chart isRef="25" />
                 <Columns>1</Columns>
                 <Font>Arial,8</Font>
                 <LabelsColor>140, 140, 140</LabelsColor>
@@ -385,30 +392,30 @@
               </Legend>
               <Name>Chart1</Name>
               <Page isRef="3" />
-              <Parent isRef="23" />
+              <Parent isRef="24" />
               <Series isList="true" count="1">
-                <Item21 Ref="33" type="Stimulsoft.Report.Chart.StiLineSeries" isKey="true">
+                <Item21 Ref="34" type="Stimulsoft.Report.Chart.StiLineSeries" isKey="true">
                   <AllowApplyStyle>False</AllowApplyStyle>
                   <ArgumentDataColumn>Данные.Время</ArgumentDataColumn>
-                  <Chart isRef="24" />
+                  <Chart isRef="25" />
                   <Conditions isList="true" count="0" />
                   <Filters isList="true" count="0" />
                   <Lighting>False</Lighting>
                   <LineColor>46, 198, 200</LineColor>
                   <LineColorNegative>Firebrick</LineColorNegative>
-                  <LineMarker Ref="34" type="Stimulsoft.Report.Chart.StiLineMarker" isKey="true">
+                  <LineMarker Ref="35" type="Stimulsoft.Report.Chart.StiLineMarker" isKey="true">
                     <BorderColor>0, 48, 50</BorderColor>
                     <Brush>[96:248:250]</Brush>
                   </LineMarker>
-                  <Marker Ref="35" type="Stimulsoft.Report.Chart.StiMarker" isKey="true">
+                  <Marker Ref="36" type="Stimulsoft.Report.Chart.StiMarker" isKey="true">
                     <BorderColor>0, 98, 100</BorderColor>
                     <Brush>[146:255:255]</Brush>
                     <Visible>False</Visible>
                   </Marker>
-                  <SeriesLabels Ref="36" type="Stimulsoft.Report.Chart.StiOutsideEndAxisLabels" isKey="true">
+                  <SeriesLabels Ref="37" type="Stimulsoft.Report.Chart.StiOutsideEndAxisLabels" isKey="true">
                     <BorderColor>Transparent</BorderColor>
                     <Brush>[119:255:255:255]</Brush>
-                    <Chart isRef="24" />
+                    <Chart isRef="25" />
                     <Font>Arial,10</Font>
                     <LabelColor>51, 71, 91</LabelColor>
                     <MarkerSize>8, 6</MarkerSize>
@@ -421,8 +428,8 @@
                   <ValueDataColumn>Данные.vrDynamic_A_Raznica</ValueDataColumn>
                 </Item21>
               </Series>
-              <SeriesLabels Ref="37" type="Stimulsoft.Report.Chart.StiNoneLabels" isKey="true">
-                <Chart isRef="24" />
+              <SeriesLabels Ref="38" type="Stimulsoft.Report.Chart.StiNoneLabels" isKey="true">
+                <Chart isRef="25" />
                 <MarkerSize>8, 6</MarkerSize>
                 <ValueTypeSeparator>-</ValueTypeSeparator>
                 <Width>0</Width>
@@ -430,7 +437,7 @@
               <SeriesLabelsConditions isList="true" count="0" />
               <Sort isList="true" count="0" />
               <Strips isList="true" count="0" />
-              <Style Ref="38" type="Stimulsoft.Report.Chart.StiStyle26" isKey="true">
+              <Style Ref="39" type="Stimulsoft.Report.Chart.StiStyle26" isKey="true">
                 <Conditions isList="true" count="0" />
                 <Name />
               </Style>
@@ -464,10 +471,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Периодический1</ReportAlias>
-  <ReportChanged>5/18/2023 10:46:16 AM</ReportChanged>
+  <ReportChanged>1/23/2024 11:22:41 AM</ReportChanged>
   <ReportCreated>5/10/2023 8:49:39 AM</ReportCreated>
-  <ReportFile>C:\Users\SimpleScada\Documents\Simple-Scada 2 (time-demo)\Projects\basel\Reports\Периодический1.mrt</ReportFile>
-  <ReportGuid>5f86ca2e77754d25ba80ba408e0dc0dd</ReportGuid>
+  <ReportFile>C:\Users\Администратор\Documents\Simple-Scada 2 (time-demo)\Projects\basel\Reports\Периодический1.mrt</ReportFile>
+  <ReportGuid>7b9516da32ac47bfb2e136ce2d411ffd</ReportGuid>
   <ReportName>Периодический1</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
   <ReportVersion>2023.1.6.0</ReportVersion>
