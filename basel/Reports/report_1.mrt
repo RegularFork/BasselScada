@@ -115,6 +115,7 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>0,0,9.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -131,6 +132,7 @@
             <value>Period_0_Интервал.timeinterval,IsNull,,,String,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
           </Conditions>
           <DataSourceName>Period_0_Интервал</DataSourceName>
+          <Expressions isList="true" count="0" />
           <Filters isList="true" count="0" />
           <Name>DataPeriod_0_Интервал</Name>
           <Page isRef="8" />
@@ -145,6 +147,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0,19,0.2</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,10,Bold</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -157,6 +160,7 @@
             </FooterPeriod_0_Интервал_timeinterval>
           </Components>
           <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
           <Name>FooterPeriod_0_Интервал</Name>
           <Page isRef="8" />
           <Parent isRef="8" />
@@ -172,6 +176,7 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>0,0,4.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Margins>0,0,0,0</Margins>
               <Name>DataPeriod_0_Данные_CounterName</Name>
@@ -188,6 +193,7 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>4.8,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -205,6 +211,7 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>6.4,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -222,6 +229,7 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>8,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -236,6 +244,7 @@
           </Components>
           <Conditions isList="true" count="0" />
           <DataSourceName>Period_0_Данные</DataSourceName>
+          <Expressions isList="true" count="0" />
           <Filters isList="true" count="0" />
           <Name>DataPeriod_0_Данные</Name>
           <Page isRef="8" />
@@ -250,6 +259,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>14.6,0,2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,10</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -265,6 +275,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>10.8,0,1.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8,Bold</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -279,6 +290,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>12,0,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,10,Bold</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -293,6 +305,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0,9.6,0.5</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -309,6 +322,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>16.8,0,1.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,10,Bold</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -321,6 +335,7 @@
             </FooterИсточникДанных1__Period_0__CounterName>
           </Components>
           <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
           <Name>FooterPeriod_0_Данные</Name>
           <Page isRef="8" />
           <Parent isRef="8" />
@@ -335,6 +350,7 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>0,0,9.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <HideZeros>True</HideZeros>
               <HorAlignment>Center</HorAlignment>
@@ -352,6 +368,7 @@
             <value>Period_1_Интервал.timeinterval,IsNull,,,String,Red,Transparent,Arial_x002C_8,False,False,,,None</value>
           </Conditions>
           <DataSourceName>Period_1_Интервал</DataSourceName>
+          <Expressions isList="true" count="0" />
           <Filters isList="true" count="0" />
           <Name>DataPeriod_1_Интервал</Name>
           <Page isRef="8" />
@@ -366,6 +383,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0,19,0.2</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,10,Bold</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -378,6 +396,7 @@
             </FooterPeriod_1_Интервал_timeinterval>
           </Components>
           <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
           <Name>FooterPeriod_1_Интервал</Name>
           <Page isRef="8" />
           <Parent isRef="8" />
@@ -393,6 +412,7 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>0,0,4.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Margins>0,0,0,0</Margins>
               <Name>DataPeriod_1_Данные_CounterName</Name>
@@ -409,6 +429,7 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>4.8,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -426,6 +447,7 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>6.4,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -443,6 +465,7 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>8,0,1.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -457,6 +480,7 @@
           </Components>
           <Conditions isList="true" count="0" />
           <DataSourceName>Period_1_Данные</DataSourceName>
+          <Expressions isList="true" count="0" />
           <Filters isList="true" count="0" />
           <Name>DataPeriod_1_Данные</Name>
           <Page isRef="8" />
@@ -471,6 +495,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>9.8,0,2.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,10,Bold</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -485,6 +510,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>13.6,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,10,Bold</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -499,6 +525,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>15.4,0,1.8,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,10,Bold</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -513,6 +540,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0,9.6,0.5</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -527,6 +555,7 @@
             </FooterPeriod_1_Данные_aEnergy>
           </Components>
           <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
           <Name>FooterPeriod_1_Данные</Name>
           <Page isRef="8" />
           <Parent isRef="8" />
@@ -539,6 +568,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0,9.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -551,6 +581,7 @@
             </Text1>
           </Components>
           <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
           <Name>HeaderBand1</Name>
           <Page isRef="8" />
           <Parent isRef="8" />
@@ -566,6 +597,7 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>0,0,7.2,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Margins>0,0,0,0</Margins>
               <Name>DataИтого_CounterName</Name>
@@ -582,6 +614,7 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>7.2,0,2.4,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -597,6 +630,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>0,-0.4,19,0</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text3</Name>
@@ -607,6 +641,7 @@
           </Components>
           <Conditions isList="true" count="0" />
           <DataSourceName>Итого</DataSourceName>
+          <Expressions isList="true" count="0" />
           <Filters isList="true" count="0" />
           <Name>DataИтого</Name>
           <Page isRef="8" />
@@ -621,6 +656,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0,9.6,0.4</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -637,6 +673,7 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>9.6,0,9.4,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,10,Bold</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -649,12 +686,14 @@
             </FooterИтого_Total>
           </Components>
           <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
           <Name>FooterИтого</Name>
           <Page isRef="8" />
           <Parent isRef="8" />
         </FooterИтого>
       </Components>
       <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
       <Guid>da8dab2d486a49ea90249841446ec7ab</Guid>
       <Margins>1,1,1,1</Margins>
       <Name>Page1</Name>
@@ -676,10 +715,11 @@
   <ReportAlias>report_1</ReportAlias>
   <ReportChanged>11/22/2021 10:50:54 PM</ReportChanged>
   <ReportCreated>11/20/2021 5:19:00 PM</ReportCreated>
+  <ReportFile>C:\Users\Администратор\Documents\Simple-Scada 2 (time-demo)\Projects\basel\Reports\report_1.mrt</ReportFile>
   <ReportGuid>bad88036fe3142f5a3c2bb0646d904c7</ReportGuid>
   <ReportName>report_1</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
-  <ReportVersion>2019.3.1.0</ReportVersion>
+  <ReportVersion>2023.1.6.0</ReportVersion>
   <Script>using System;
 using System.Drawing;
 using System.Windows.Forms;
