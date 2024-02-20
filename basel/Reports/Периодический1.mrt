@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <Данные Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Данные</Alias>
+        <Columns isList="true" count="4">
+          <value>Время,System.DateTime</value>
+          <value>vrDynamic_A_Begin,System.Double</value>
+          <value>vrDynamic_A_End,System.Double</value>
+          <value>vrDynamic_A_Raznica,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>44928caed0644ff1b78e7b1f64e13e09</Key>
+        <Name>Данные</Name>
+        <NameInSource>Simple-Scada Base.Данные</NameInSource>
+      </Данные>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="4">
+      <value>,Данные_Начало,Данные_Начало,,System.Nullable`1[System.DateTime],,False,False,False,False,,,True</value>
+      <value>,Данные_Конец,Данные_Конец,,System.Nullable`1[System.DateTime],,False,False,False,False,,,True</value>
+      <value>,Данные_Интервал,Данные_Интервал,,System.Int64,_x0033_600,False,False,False,False</value>
+      <value>,vrDynamic_name,vrDynamic_name,Номер_x0020_потребителя,System.String,,False,False,False,False,,,True</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>add3db8c3aa647288743c3ae08d8619d</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <ReportTitleBand1 Ref="4" type="ReportTitleBand" isKey="true">
+          <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+          <Brush>[0:255:255:255]</Brush>
+          <ClientRectangle>0,0.4,19,1.2</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text2 Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>9f52ff7c832440bd87e3ec105218fe07</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Периодический отчёт данных от {Данные_Начало} до {Данные_Конец}.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text11 Ref="6" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>6.2,0.2,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>410373de3ac64e378fb2f40714a1cd5d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Потребитель </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text3 Ref="7" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>9,0.2,4.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{vrDynamic_name}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Guid>777a30c39ffc4fb4b0825e38ac075c90</Guid>
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </ReportTitleBand1>
+        <HeaderДанные Ref="8" type="HeaderBand" isKey="true">
+          <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+          <Brush>[0:255:255:255]</Brush>
+          <ClientRectangle>0,2.4,19,0.6</ClientRectangle>
+          <Components isList="true" count="4">
+            <HeaderДанные_Время Ref="9" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>0,0,4.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderДанные_Время</Name>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>Время интервал</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderДанные_Время>
+            <HeaderДанные_vrDynamic_A_Begin Ref="10" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>4.8,0,4.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderДанные_vrDynamic_A_Begin</Name>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>А+ кВт*ч От</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderДанные_vrDynamic_A_Begin>
+            <HeaderДанные_vrDynamic_A_End Ref="11" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>9.6,0,4.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderДанные_vrDynamic_A_End</Name>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>А+ кВт*ч До</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderДанные_vrDynamic_A_End>
+            <HeaderДанные_vrDynamic_A_Raznica Ref="12" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>14.4,0,4.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderДанные_vrDynamic_A_Raznica</Name>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>А+ кВт*ч Разница</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderДанные_vrDynamic_A_Raznica>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>HeaderДанные</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <PrintOnAllPages>False</PrintOnAllPages>
+        </HeaderДанные>
+        <DataДанные Ref="13" type="DataBand" isKey="true">
+          <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+          <Brush>[0:255:255:255]</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,3.8,19,0.4</ClientRectangle>
+          <Components isList="true" count="4">
+            <DataДанные_Время Ref="14" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,4.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataДанные_Время</Name>
+              <Page isRef="3" />
+              <Parent isRef="13" />
+              <Text>{Данные.Время.AddSeconds(-Данные_Интервал) + " - " + Данные.Время}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataДанные_Время>
+            <DataДанные_vrDynamic_A_Begin Ref="15" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>4.8,0,4.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataДанные_vrDynamic_A_Begin</Name>
+              <Page isRef="3" />
+              <Parent isRef="13" />
+              <Text>{Данные.vrDynamic_A_Begin}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="16" type="NumberFormat" isKey="true">
+                <DecimalDigits>1</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataДанные_vrDynamic_A_Begin>
+            <DataДанные_vrDynamic_A_End Ref="17" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9.6,0,4.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataДанные_vrDynamic_A_End</Name>
+              <Page isRef="3" />
+              <Parent isRef="13" />
+              <Text>{Данные.vrDynamic_A_End}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="18" type="NumberFormat" isKey="true">
+                <DecimalDigits>1</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataДанные_vrDynamic_A_End>
+            <DataДанные_vrDynamic_A_Raznica Ref="19" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>14.4,0,4.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataДанные_vrDynamic_A_Raznica</Name>
+              <Page isRef="3" />
+              <Parent isRef="13" />
+              <Text>{Данные.vrDynamic_A_Raznica}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="20" type="NumberFormat" isKey="true">
+                <DecimalDigits>3</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataДанные_vrDynamic_A_Raznica>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>Данные</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>DataДанные</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataДанные>
+        <FooterBand1 Ref="21" type="FooterBand" isKey="true">
+          <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+          <Brush>[0:255:255:255]</Brush>
+          <ClientRectangle>0,5,19,0.4</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text1 Ref="22" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.4,0,4.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="21" />
+              <Text>{SumD(Данные.vrDynamic_A_Raznica)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="23" type="NumberFormat" isKey="true">
+                <DecimalDigits>3</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>FooterBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </FooterBand1>
+        <ReportSummaryBand1 Ref="24" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6.2,19,6</ClientRectangle>
+          <Components isList="true" count="1">
+            <Chart1 Ref="25" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
+              <Area Ref="26" type="Stimulsoft.Report.Chart.StiClusteredColumnArea" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <BorderThickness>1</BorderThickness>
+                <Brush>[255:255:255]</Brush>
+                <Chart isRef="25" />
+                <GridLinesHorRight Ref="27" type="Stimulsoft.Report.Chart.StiGridLinesHor" isKey="true">
+                  <Area isRef="26" />
+                  <Color>Silver</Color>
+                  <MinorColor>Gainsboro</MinorColor>
+                  <Visible>False</Visible>
+                </GridLinesHorRight>
+                <YAxis Ref="28" type="Stimulsoft.Report.Chart.StiYLeftAxis" isKey="true">
+                  <Area isRef="26" />
+                  <LineColor>140, 140, 140</LineColor>
+                  <Title Ref="29" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Direction>BottomToTop</Direction>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </YAxis>
+                <YRightAxis Ref="30" type="Stimulsoft.Report.Chart.StiYRightAxis" isKey="true">
+                  <Area isRef="26" />
+                  <Labels Ref="31" type="Stimulsoft.Report.Chart.StiAxisLabels" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Font>Tahoma,8</Font>
+                    <TextAlignment>Left</TextAlignment>
+                  </Labels>
+                  <LineColor>140, 140, 140</LineColor>
+                  <Title Ref="32" type="Stimulsoft.Report.Chart.StiAxisTitle" isKey="true">
+                    <Color>140, 140, 140</Color>
+                    <Direction>TopToBottom</Direction>
+                    <Font>Tahoma,12,Bold</Font>
+                  </Title>
+                </YRightAxis>
+              </Area>
+              <Brush>[255:255:255]</Brush>
+              <ClientRectangle>0,0.2,19,5.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <ConstantLines isList="true" count="0" />
+              <CustomStyleName />
+              <Expressions isList="true" count="0" />
+              <Filters isList="true" count="0" />
+              <Legend Ref="33" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+                <BorderColor>Transparent</BorderColor>
+                <Brush>[255:255:255]</Brush>
+                <Chart isRef="25" />
+                <Columns>1</Columns>
+                <Font>Arial,8</Font>
+                <LabelsColor>140, 140, 140</LabelsColor>
+                <MarkerSize>10, 10</MarkerSize>
+                <ShowShadow>False</ShowShadow>
+                <TitleColor>105, 105, 105</TitleColor>
+                <TitleFont>Arial,14,Bold</TitleFont>
+              </Legend>
+              <Name>Chart1</Name>
+              <Page isRef="3" />
+              <Parent isRef="24" />
+              <Series isList="true" count="1">
+                <Item21 Ref="34" type="Stimulsoft.Report.Chart.StiLineSeries" isKey="true">
+                  <AllowApplyStyle>False</AllowApplyStyle>
+                  <ArgumentDataColumn>Данные.Время</ArgumentDataColumn>
+                  <Chart isRef="25" />
+                  <Conditions isList="true" count="0" />
+                  <Filters isList="true" count="0" />
+                  <Lighting>False</Lighting>
+                  <LineColor>46, 198, 200</LineColor>
+                  <LineColorNegative>Firebrick</LineColorNegative>
+                  <LineMarker Ref="35" type="Stimulsoft.Report.Chart.StiLineMarker" isKey="true">
+                    <BorderColor>0, 48, 50</BorderColor>
+                    <Brush>[96:248:250]</Brush>
+                  </LineMarker>
+                  <Marker Ref="36" type="Stimulsoft.Report.Chart.StiMarker" isKey="true">
+                    <BorderColor>0, 98, 100</BorderColor>
+                    <Brush>[146:255:255]</Brush>
+                    <Visible>False</Visible>
+                  </Marker>
+                  <SeriesLabels Ref="37" type="Stimulsoft.Report.Chart.StiOutsideEndAxisLabels" isKey="true">
+                    <BorderColor>Transparent</BorderColor>
+                    <Brush>[119:255:255:255]</Brush>
+                    <Chart isRef="25" />
+                    <Font>Arial,10</Font>
+                    <LabelColor>51, 71, 91</LabelColor>
+                    <MarkerSize>8, 6</MarkerSize>
+                    <ValueTypeSeparator>-</ValueTypeSeparator>
+                    <Width>0</Width>
+                  </SeriesLabels>
+                  <ShowShadow>False</ShowShadow>
+                  <Title>Ряд 1</Title>
+                  <TrendLines isList="true" count="0" />
+                  <ValueDataColumn>Данные.vrDynamic_A_Raznica</ValueDataColumn>
+                </Item21>
+              </Series>
+              <SeriesLabels Ref="38" type="Stimulsoft.Report.Chart.StiNoneLabels" isKey="true">
+                <Chart isRef="25" />
+                <MarkerSize>8, 6</MarkerSize>
+                <ValueTypeSeparator>-</ValueTypeSeparator>
+                <Width>0</Width>
+              </SeriesLabels>
+              <SeriesLabelsConditions isList="true" count="0" />
+              <Sort isList="true" count="0" />
+              <Strips isList="true" count="0" />
+              <Style Ref="39" type="Stimulsoft.Report.Chart.StiStyle26" isKey="true">
+                <Conditions isList="true" count="0" />
+                <Name />
+              </Style>
+            </Chart1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ReportSummaryBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </ReportSummaryBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>c5e21a9e5da145eeb21ebaa0c93a8e11</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Периодический1</ReportAlias>
+  <ReportChanged>2/20/2024 3:17:54 AM</ReportChanged>
+  <ReportCreated>5/10/2023 8:49:39 AM</ReportCreated>
+  <ReportFile>C:\Users\GPS\Documents\Simple-Scada 2\Projects\basel\Reports\Периодический1.mrt</ReportFile>
+  <ReportGuid>559caf8d2ed64c0bb14b6a1a5180bd08</ReportGuid>
+  <ReportName>Периодический1</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2023.1.6.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Периодический1 : Stimulsoft.Report.StiReport
+    {
+        public Периодический1()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

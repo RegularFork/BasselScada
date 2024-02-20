@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <Неподтверждённые Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Неподтверждённые</Alias>
+        <Columns isList="true" count="10">
+          <value>Время,System.DateTime</value>
+          <value>ID_x0020_группы,System.Int32</value>
+          <value>ID_x0020_сообщения,System.Int32</value>
+          <value>Тип,System.Int32</value>
+          <value>Текст_x0020_сообщения,System.String</value>
+          <value>Объект,System.String</value>
+          <value>Завершено,System.DateTime</value>
+          <value>Длительность,System.TimeSpan</value>
+          <value>Подтверждено,System.DateTime</value>
+          <value>Подтвердил,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>dd32801dd2844f94858c4cebe5ba1846</Key>
+        <Name>Неподтверждённые</Name>
+        <NameInSource>Simple-Scada Base.Неподтверждённые</NameInSource>
+      </Неподтверждённые>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="2">
+      <value>,Неподтверждённые_Начало,Неподтверждённые_Начало,,System.DateTime,_x0031_1_x002F_4_x002F_2022_x0020_4:37:15_x0020_PM,False,False,False,False,,,True</value>
+      <value>,Неподтверждённые_Конец,Неподтверждённые_Конец,,System.DateTime,_x0031_1_x002F_5_x002F_2022_x0020_4:37:15_x0020_PM,False,False,False,False,,,True</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>c5dcc8f90b6f42d5a5c99fec616e3295</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <HeaderНеподтверждённые Ref="4" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,27.7,0.8</ClientRectangle>
+          <Components isList="true" count="4">
+            <HeaderНеподтверждённые_Тип Ref="5" type="Text" isKey="true">
+              <Border>Right, Bottom;[242:242:242];1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>0,0,0.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderНеподтверждённые_Тип</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Тип</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderНеподтверждённые_Тип>
+            <HeaderНеподтверждённые_Текст_сообщения Ref="6" type="Text" isKey="true">
+              <Border>Right, Bottom;[242:242:242];1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>0.8,0,19.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderНеподтверждённые_Текст_сообщения</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>  Текст сообщения</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderНеподтверждённые_Текст_сообщения>
+            <HeaderНеподтверждённые_Завершено Ref="7" type="Text" isKey="true">
+              <Border>Right, Bottom;[242:242:242];1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>24.8,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderНеподтверждённые_Завершено</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Завершено</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderНеподтверждённые_Завершено>
+            <HeaderНеподтверждённые_Время Ref="8" type="Text" isKey="true">
+              <Border>Right, Bottom;[242:242:242];1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>20.4,0,4.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderНеподтверждённые_Время</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Время</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderНеподтверждённые_Время>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>HeaderНеподтверждённые</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </HeaderНеподтверждённые>
+        <DataНеподтверждённые Ref="9" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,2,27.7,0.8</ClientRectangle>
+          <Components isList="true" count="4">
+            <DataНеподтверждённые_Тип Ref="10" type="Text" isKey="true">
+              <Border>Right, Bottom;[242:242:242];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,0.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="3">
+                <value>Неподтверждённые.Тип,EqualTo,_x0030_,,Numeric,[255:74:18],[255:74:18],Arial_x002C_8,True,False,,,None</value>
+                <value>Неподтверждённые.Тип,EqualTo,_x0031_,,Numeric,[255:239:96],[255:239:96],Arial_x002C_8,True,False,,,None</value>
+                <value>Неподтверждённые.Тип,EqualTo,_x0032_,,Numeric,[242:242:242],[242:242:242],Arial_x002C_8,True,False,,,None</value>
+              </Conditions>
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataНеподтверждённые_Тип</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Text>{Неподтверждённые.Тип}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataНеподтверждённые_Тип>
+            <DataНеподтверждённые_Текст_сообщения Ref="11" type="Text" isKey="true">
+              <Border>Right, Bottom;[242:242:242];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.8,0,19.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataНеподтверждённые_Текст_сообщения</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Text>  {Неподтверждённые.Текст_сообщения}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataНеподтверждённые_Текст_сообщения>
+            <DataНеподтверждённые_Завершено Ref="12" type="Text" isKey="true">
+              <Border>Right, Bottom;[242:242:242];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>24.8,0,2.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataНеподтверждённые_Завершено</Name>
+              <NullValue>-</NullValue>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Text>{Неподтверждённые.Завершено}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="13" type="CustomFormat" isKey="true">
+                <StringFormat>dd.MM HH:mm</StringFormat>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataНеподтверждённые_Завершено>
+            <DataНеподтверждённые_Время Ref="14" type="Text" isKey="true">
+              <Border>Right, Bottom;[242:242:242];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>20.4,0,4.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataНеподтверждённые_Время</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Text>{Неподтверждённые.Время}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="15" type="DateFormat" isKey="true">
+                <StringFormat>G</StringFormat>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataНеподтверждённые_Время>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>Неподтверждённые</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>DataНеподтверждённые</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataНеподтверждённые>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>3c9be20b65474d4b9ca5340ed8cb19fd</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Неподтвержденные</ReportAlias>
+  <ReportChanged>11/5/2022 4:44:00 PM</ReportChanged>
+  <ReportCreated>11/4/2022 4:41:11 PM</ReportCreated>
+  <ReportFile>C:\Users\SERVER\Documents\Simple-Scada 2\Projects\Demo-проект_Installer\Reports\Неподтвержденные.mrt</ReportFile>
+  <ReportGuid>a4d596f0428840da93d50cefd7cce4a0</ReportGuid>
+  <ReportName>Неподтвержденные</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2023.1.6.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Неподтвержденные : Stimulsoft.Report.StiReport
+    {
+        public Неподтвержденные()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
